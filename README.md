@@ -96,11 +96,13 @@ npm run voice -- --provider=fptai --voice=banmai --text="Xin chào từ techbook
 
 ## Workflow với Codex
 
-1. Dùng prompt trong `prompts/codex-episode-prompt.md`.
-2. Yêu cầu Codex kiểm tra nguồn tin mới, rồi xuất JSON đúng schema.
-3. Lưu JSON vào `content/<ngay>-<slug>.json`.
-4. Render bằng `npm run render:episode -- --episode=content/<file>.json`.
-5. Khi được hỏi, chọn FPT.AI để tạo voice tiếng Việt hoặc bỏ qua voice lần này.
+1. Đọc `content/episode-history.json` để tránh trùng lặp với các tập đã làm.
+2. Dùng prompt trong `prompts/codex-episode-prompt.md`.
+3. Yêu cầu Codex kiểm tra nguồn tin mới, rồi xuất JSON đúng schema.
+4. Lưu JSON vào `content/<ngay>-<slug>.json`.
+5. Cập nhật `content/episode-history.json` khi tập được chốt hoặc render.
+6. Render bằng `npm run render:episode -- --episode=content/<file>.json`.
+7. Khi được hỏi, chọn FPT.AI để tạo voice tiếng Việt hoặc bỏ qua voice lần này.
 
 Các quy tắc sản xuất video đã chốt được lưu trong `docs/video-rules.md`.
 
@@ -116,6 +118,7 @@ Không nên commit hoặc render sẵn nhạc TikTok đang hot nếu chưa có q
 - `src/TechbookShorts.tsx`: template video dọc.
 - `src/style.css`: visual style, typography, animation.
 - `content/episode.sample.json`: dữ liệu demo.
+- `content/episode-history.json`: lịch sử tập, angle đã cover và guard tránh trùng ý tưởng.
 - `prompts/codex-episode-prompt.md`: prompt tạo episode bằng Codex.
 - `docs/video-rules.md`: rule tạo video, voice, brand và nhạc.
 - `public/audio/`: nhạc nền và voiceover local.

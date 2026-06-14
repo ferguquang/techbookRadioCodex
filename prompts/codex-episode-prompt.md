@@ -2,6 +2,12 @@
 
 Bạn là editor cho kênh techbookradio. Hãy tạo một JSON episode cho Remotion template trong project này.
 
+Trước khi viết:
+- Đọc `content/episode-history.json` để biết các tập, angle, hook, key terms và ý đã cover.
+- Không lặp lại title, hook, core angle, ví dụ hoặc cấu trúc ý chính của tập cũ.
+- Nếu chủ đề người dùng đưa gần giống tập cũ, hãy chọn một angle hẹp hơn hoặc follow-up khác rõ ràng.
+- Sau khi episode được chốt hoặc render, cập nhật thêm một entry ngắn vào `content/episode-history.json`.
+
 Yêu cầu:
 - Chủ đề: `<điền chủ đề, ví dụ: AI agent, sách công nghệ, chip mới, startup AI, dev tool hot>`
 - Độ dài: 38-55 giây, video dọc TikTok/YouTube Shorts.
@@ -10,6 +16,7 @@ Yêu cầu:
 - Mỗi scene có `kicker`, `headline`, `bullets`, `source`, `durationSec`, `accent`.
 - Chỉ dùng dữ kiện có nguồn đáng tin. Nếu là tin mới, hãy kiểm tra ngày xuất bản và không viết như sự thật khi chưa xác minh.
 - Không tự thêm file nhạc có bản quyền. Trường `music.file` để rỗng hoặc trỏ đến file local đã được cấp quyền trong `public/audio/`.
+- `voiceover.file` để rỗng khi tạo nội dung mới; script render/voice sẽ tự sinh file local sau.
 - Output chỉ là JSON hợp lệ, không bọc markdown.
 
 Schema rút gọn:

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Track published or drafted techbookradio episode ideas so future episodes do not repeat the same topic, hook, angle, or examples.",
+  "usage": [
+    "Read this file before proposing or writing a new episode.",
+    "Avoid reusing existing titles, hooks, core angles, covered ideas, and key terms unless the user explicitly asks for a follow-up.",
+    "After a new episode is approved or rendered, add a concise entry here with the final content file path."
+  ],
+  "episodes": [
+    {
+      "id": "2026-06-14-ai-agent-va-sach-cong-nghe",
+      "status": "draft",
+      "date": "2026-06-14",
+      "episodeNo": 2,
+      "contentFile": "content/2026-06-14-ai-agent-va-sach-cong-nghe.json",
+      "title": "AI agent và sách công nghệ",
+      "coreAngle": "Bản tin tổng hợp về AI agent chuyển từ demo sang workflow thật, cách chọn sách công nghệ theo vấn đề, và format video ngắn giải thích khái niệm khó.",
+      "hook": "5 phút bắt nhịp công nghệ trước khi bắt đầu ngày mới",
+      "coveredIdeas": [
+        "AI agent chuyển từ demo sang workflow thật",
+        "Doanh nghiệp quan tâm tự động hóa tác vụ lặp lại",
+        "Cần theo dõi bảo mật dữ liệu, quyền truy cập và kiểm chứng kết quả khi dùng agent",
+        "Chọn sách công nghệ theo vấn đề đang gặp: sản phẩm, dữ liệu, AI hoặc hệ thống",
+        "Video ngắn giải thích khái niệm khó nên có hook mạnh, 3 ý chính và CTA lưu video"
+      ],
+      "keyTerms": [
+        "AI agent",
+        "workflow",
+        "automation",
+        "sách công nghệ",
+        "video ngắn giải thích khái niệm"
+      ],
+      "avoidRepeating": [
+        "Không làm lại episode tổng hợp 3 mảng AI agent, sách công nghệ và hot trend theo cùng cấu trúc này.",
+        "Không dùng lại hook 5 phút bắt nhịp công nghệ.",
+        "Nếu làm tiếp về AI agent, hãy chọn một góc cụ thể hơn như memory, tool use, evaluation hoặc bảo mật."
+      ]
+    },
+    {
+      "id": "2026-06-14-context-engineering-prompt-hay-chua-du",
+      "status": "rendered",
+      "date": "2026-06-14",
+      "episodeNo": 3,
+      "contentFile": "content/2026-06-14-context-engineering-prompt-hay-chua-du.json",
+      "title": "Context Engineering: prompt hay chưa đủ",
+      "coreAngle": "Prompt hay chưa đủ nếu AI không có đúng ngữ cảnh; context engineering là cách thiết kế tài liệu, lịch sử, tool, dữ liệu và tiêu chí kiểm tra để AI làm việc ổn định.",
+      "hook": "Prompt hay chưa đủ nếu AI không có đúng ngữ cảnh",
+      "coveredIdeas": [
+        "Prompt giúp AI hiểu việc cần làm, context giúp AI biết nên làm như thế nào",
+        "AI cần mục tiêu, dữ liệu, ví dụ, ràng buộc và tiêu chí kiểm tra",
+        "Thiếu context khiến model dễ trả lời nghe đúng nhưng không dùng được",
+        "Context engineering là thiết kế những gì đi vào cửa sổ ngữ cảnh",
+        "Không nhồi mọi thứ vào prompt; cần chọn đúng tài liệu, lịch sử, tool và dữ liệu cho từng bước",
+        "Với AI agent, context còn quan trọng hơn model",
+        "Bốn thao tác đáng nhớ: ghi lại, chọn lọc, nén gọn và cô lập context"
+      ],
+      "keyTerms": [
+        "context engineering",
+        "prompt engineering",
+        "AI agent",
+        "context window",
+        "tool",
+        "model",
+        "workflow"
+      ],
+      "sources": [
+        "OpenAI prompt engineering guide",
+        "Anthropic: Effective context engineering for AI agents",
+        "LangChain: Context engineering for agents"
+      ],
+      "voiceNotes": [
+        "FPT.AI leminh made the r in pờ rom sound close to d/gi.",
+        "FPT.AI lannhi was tried because the southern accent keeps r clearer."
+      ],
+      "avoidRepeating": [
+        "Không làm lại angle prompt hay chưa đủ với cùng định nghĩa context engineering.",
+        "Không lặp lại bốn thao tác ghi lại, chọn lọc, nén gọn, cô lập context như nội dung chính.",
+        "Nếu làm phần tiếp theo, hãy đi sâu vào một case cụ thể: RAG, memory cho agent, tool selection, eval hoặc context poisoning."
+      ]
+    }
+  ],
+  "openFollowUpIdeas": [
+    {
+      "topic": "RAG không chỉ là vector search",
+      "whyDifferent": "Follow-up từ context engineering nhưng tập trung vào retrieval, ranking, grounding và kiểm chứng nguồn."
+    },
+    {
+      "topic": "AI agent cần memory như thế nào",
+      "whyDifferent": "Đi sâu vào memory ngắn hạn, dài hạn và khi nào nên quên thông tin."
+    },
+    {
+      "topic": "Context poisoning là gì",
+      "whyDifferent": "Góc bảo mật AI agent, khác với tập giải thích context engineering nền tảng."
+    },
+    {
+      "topic": "Prompt engineering vẫn còn hữu ích ở đâu",
+      "whyDifferent": "Cân bằng lại luận điểm, tập trung vào cấu trúc yêu cầu, ví dụ và tiêu chí đầu ra."
+    }
+  ]
+}

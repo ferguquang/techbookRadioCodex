@@ -15,6 +15,13 @@
 - Không hiển thị badge `EP` ở góc trên bên phải.
 - Không hiển thị timestamp tiến độ ở góc cuối bên phải.
 
+## Content History
+
+- Luôn đọc `content/episode-history.json` trước khi tạo ý tưởng hoặc episode mới.
+- Tránh trùng `title`, hook, core angle, ví dụ, key terms và các ý đã cover trong history.
+- Nếu làm follow-up từ một tập cũ, angle mới phải hẹp và khác rõ ràng, ví dụ đi sâu vào RAG, memory, tool selection, eval hoặc security.
+- Sau khi tập được chốt hoặc render, cập nhật `content/episode-history.json` với entry ngắn gồm `title`, `coreAngle`, `hook`, `coveredIdeas`, `keyTerms`, `contentFile` và `avoidRepeating`.
+
 ## Voice
 
 - Trước khi render video có voice mới, phải hỏi người dùng muốn dùng voice nào.
@@ -50,4 +57,5 @@ Rule kỹ thuật nằm trong `scripts/lib/voice.mjs`.
 ## Git Hygiene
 
 - Commit source, content, prompt/rules, scripts, README/docs và hướng dẫn cài đặt.
+- Commit `content/episode-history.json` để máy khác vẫn biết tập cũ đã làm gì.
 - Không commit `node_modules`, `.env`, `.env.local`, audio sinh ra trong `public/audio/`, build cache, hoặc output render trong `out/`.
