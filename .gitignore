@@ -10,3 +10,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+public/audio/*.mp3
+public/audio/*.wav
+public/audio/*.m4a
+public/audio/*.aac
+public/audio/*.flac

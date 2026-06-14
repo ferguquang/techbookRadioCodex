@@ -80,6 +80,8 @@ Output:
 - `public/audio/demo-fptai-giahuy.mp3`
 - `public/audio/demo-fptai-linhsan.mp3`
 
+Các file audio sinh ra trong `public/audio/` là artifact local và được ignore khỏi git.
+
 Tạo voice cho episode nhưng chưa render:
 
 ```bash

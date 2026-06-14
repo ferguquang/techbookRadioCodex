@@ -15,10 +15,8 @@
     "credit": "Thêm nhạc trend đã được cấp quyền vào public/audio/trend.mp3"
   },
   "voiceover": {
-    "file": "audio/2026-06-14-context-engineering-prompt-hay-chua-du-fptai-lannhi-voice.mp3",
-    "volume": 1,
-    "provider": "fptai",
-    "voice": "lannhi"
+    "file": "",
+    "volume": 1
   },
   "scenes": [
     {

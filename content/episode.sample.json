@@ -15,10 +15,8 @@
     "credit": "Thêm nhạc trend đã được cấp quyền vào public/audio/trend.mp3"
   },
   "voiceover": {
-    "file": "audio/episode.sample-fptai-voice.mp3",
-    "volume": 1,
-    "provider": "fptai",
-    "voice": "banmai"
+    "file": "",
+    "volume": 1
   },
   "scenes": [
     {

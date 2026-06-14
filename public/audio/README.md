@@ -2,6 +2,8 @@
 
 Đặt file audio local ở đây rồi tham chiếu trong JSON bằng đường dẫn tương đối từ thư mục `public`.
 
+Các file audio sinh ra ở đây là artifact local và không được commit lên git. Khi clone repo trên máy khác, chạy lại lệnh tạo voice hoặc render episode để sinh audio mới.
+
 Ví dụ:
 
 ```json

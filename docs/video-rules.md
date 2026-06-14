@@ -49,5 +49,5 @@ Rule kỹ thuật nằm trong `scripts/lib/voice.mjs`.
 
 ## Git Hygiene
 
-- Commit source, content, prompt/rules, scripts, README/docs và audio demo/voice nhỏ cần cho episode mẫu.
-- Không commit `node_modules`, `.env`, `.env.local`, build cache, hoặc output render trong `out/`.
+- Commit source, content, prompt/rules, scripts, README/docs và hướng dẫn cài đặt.
+- Không commit `node_modules`, `.env`, `.env.local`, audio sinh ra trong `public/audio/`, build cache, hoặc output render trong `out/`.
