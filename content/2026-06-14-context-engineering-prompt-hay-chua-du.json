@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "brand": "techbookradio",
+    "handle": "techbookradio",
+    "title": "Context Engineering: prompt hay chưa đủ",
+    "subtitle": "Prompt chỉ là câu hỏi. Context mới là hệ thống.",
+    "date": "2026-06-14",
+    "episodeNo": 3,
+    "language": "vi-VN"
+  },
+  "music": {
+    "file": "",
+    "volume": 0.16,
+    "loop": true,
+    "credit": "Thêm nhạc trend đã được cấp quyền vào public/audio/trend.mp3"
+  },
+  "voiceover": {
+    "file": "audio/2026-06-14-context-engineering-prompt-hay-chua-du-fptai-lannhi-voice.mp3",
+    "volume": 1,
+    "provider": "fptai",
+    "voice": "lannhi"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "hook",
+      "kicker": "AI TREND",
+      "headline": "Prompt hay chưa đủ nếu AI không có đúng ngữ cảnh",
+      "bullets": [
+        "Một câu lệnh tốt giúp AI hiểu việc cần làm.",
+        "Nhưng context tốt giúp AI biết nên làm việc đó như thế nào."
+      ],
+      "source": "OpenAI Prompt Engineering / Anthropic Context Engineering",
+      "durationSec": 10,
+      "accent": "cyan"
+    },
+    {
+      "id": "prompt-limit",
+      "type": "ai",
+      "kicker": "VẤN ĐỀ",
+      "headline": "Prompt engineering tối ưu câu hỏi, nhưng bài toán thật cần nhiều hơn",
+      "bullets": [
+        "AI cần mục tiêu, dữ liệu, ví dụ, ràng buộc và tiêu chí kiểm tra.",
+        "Nếu thiếu context, model dễ trả lời nghe đúng nhưng không dùng được."
+      ],
+      "source": "OpenAI prompt engineering guide",
+      "durationSec": 16,
+      "accent": "violet"
+    },
+    {
+      "id": "context-definition",
+      "type": "trend",
+      "kicker": "KHÁI NIỆM",
+      "headline": "Context engineering là thiết kế những gì đi vào cửa sổ ngữ cảnh",
+      "bullets": [
+        "Không nhồi mọi thứ vào prompt.",
+        "Chọn đúng tài liệu, lịch sử, tool và dữ liệu cần cho từng bước."
+      ],
+      "source": "Anthropic: Effective context engineering for AI agents",
+      "durationSec": 15,
+      "accent": "amber"
+    },
+    {
+      "id": "agent-system",
+      "type": "ai",
+      "kicker": "ỨNG DỤNG",
+      "headline": "Với AI agent, context còn quan trọng hơn model",
+      "bullets": [
+        "Agent cần nhớ việc đã làm, biết dùng tool nào và biết khi nào phải hỏi lại.",
+        "Bốn thao tác đáng nhớ: ghi lại, chọn lọc, nén gọn và cô lập context."
+      ],
+      "source": "LangChain: Context engineering for agents",
+      "durationSec": 17,
+      "accent": "rose"
+    },
+    {
+      "id": "outro",
+      "type": "outro",
+      "kicker": "GHI NHỚ",
+      "headline": "Muốn AI làm việc ổn định, đừng chỉ viết prompt, hãy thiết kế context",
+      "bullets": [
+        "Prompt là điểm bắt đầu.",
+        "Context engineering mới là cách biến demo AI thành workflow thật."
+      ],
+      "source": "techbookradio",
+      "durationSec": 15,
+      "accent": "green"
+    }
+  ],
+  "cta": {
+    "primary": "Follow techbookradio để nghe tiếp các khái niệm AI dễ hiểu",
+    "secondary": "Lưu video này nếu bạn đang học cách xây AI agent"
+  }
+}
